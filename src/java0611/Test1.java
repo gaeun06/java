@@ -7,6 +7,5 @@ public class Test1 {
         System.out.print("a");
         System.out.print("b");
         System.out.println("c");
-        System.out.print("d");
     }
 }
