@@ -2,7 +2,7 @@ package a2_operator;
 
 public class LogicalOperator {
     public static void main(String[] args) {
-        // 논리 연산자 (&&, ||, ^, |)
+        // 논리 연산자 (&&, ||, ^, !)
         // 발음은 순서대로 앰퍼샌드, 파이프, 캐럿, 니게이션
         // ampersand, pipe, caret, negation(=not)
 
@@ -30,7 +30,7 @@ public class LogicalOperator {
         System.out.println();
 
         // NOR (exclusive OR 베타적논리합)
-        // 두 개의 값이 같으면 true(=1), 같으면 false(=0)
+        // 두 개의 값이 다르면 true(=1), 같으면 false(=0)
         System.out.println(true ^ true); // false
         System.out.println(true ^ false); // true
         System.out.println(false ^ true); // true
@@ -57,5 +57,16 @@ public class LogicalOperator {
         // 00000111 = 키
         // ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
         // 01000001 = 'A' 복호화 성공
+
+        // 중요 !!
+        // 쇼트 서킷 (Short Circuit)
+        // AND와 OR 논리 연산자에 사용됨
+        // AND의 경우,
+        // 첫번째 조건이 false면 두번째 조건은 실행하지 X => 결과는 무조건 false
+        // OR의 경우,
+        // 첫번째 조건이 true면 두번째 조건은 실행 X => 결과는 무조건 true
+        int value1 = 3;
+        System.out.println(false && ++value1 > 6);
+        // 두번째 조건 ++value > 6를 계산할 필요 없음. 결과는 무조건 false
     }
 }
