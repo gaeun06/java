@@ -1,0 +1,43 @@
+package a3_control;
+
+public class BreakContinue {
+    public static void main(String[] args) {
+        // 제어 키워드
+        // break
+        // switch, for, while, do~while 중괄호{} 를 탈출하는 용도로 사용함. (if문은 제외)
+        // 중요!! 가장 가까운 중괄호 한 개만 탈출 가능
+
+
+        // 기본형
+        for (int i=0; i<10; i++) {
+            if (i==5) {
+                break; // break를 if문의 윗줄에 넣으면 5까지 출력
+            }
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        System.out.println();
+
+        // 이중 for문 (double loop)
+        for (int i=0; i<3; i++) {
+            for (int j=0; j<5; j++) {
+                if (j == 2) {
+                    break;
+                }
+                System.out.println("i=" + i + ", j=" + j); // i=?, j=?
+            }
+        }
+        System.out.println();
+
+        // (tip!) 이중 for문 한 번에 탈출하는 코드
+        for (int i=0; i<3; i++) {
+            for (int j=0; j<5; j++) {
+                if (j == 2) {
+                    i = 9999999; // 바깥 loop의 조건을 강제로 false로 바꿈! (명시적으로 거대한 수를 입력)
+                    break;
+                }
+                System.out.println("i=" + i + ", j=" + j); // i=?, j=?
+            }
+        }
+    }
+}

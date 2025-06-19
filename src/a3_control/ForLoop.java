@@ -17,6 +17,7 @@ public class ForLoop {
             System.out.print(i);
         }
         System.out.println("반복 끝");
+        System.out.println();
 
         // 컴파일 에러가 발생하지는 않지만 무한 루프 상황이 발생하므로 사용 X
         // 무한 루프를 설계해도 적절한 Sleep과 리소스 관리를 동반하면 문제 없음
@@ -42,6 +43,7 @@ public class ForLoop {
             System.out.println(i); // 0 2 4 6 8
         }
         System.out.println("반복끝");
+        System.out.println();
 
         // iterator(=반복자) 여러개인 경우
         for (int i=0, j=0; i<10 && j<10; i++, j++) {
