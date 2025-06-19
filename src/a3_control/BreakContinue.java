@@ -19,9 +19,9 @@ public class BreakContinue {
         System.out.println();
 
         // 이중 for문 (double loop)
-        for (int i=0; i<3; i++) {
-            for (int j=0; j<5; j++) {
-                if (j == 2) {
+        for (int i=0; i<5; i++) { // i 3번 진행 예정
+            for (int j=0; j<5; j++) { // 2번
+                if (j == 4) {
                     break;
                 }
                 System.out.println("i=" + i + ", j=" + j); // i=?, j=?
