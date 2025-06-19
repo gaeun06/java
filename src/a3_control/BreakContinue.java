@@ -39,5 +39,16 @@ public class BreakContinue {
                 System.out.println("i=" + i + ", j=" + j); // i=?, j=?
             }
         }
+
+        // continue
+        // 반복문 안에서 현재 반복을 건너뛰고 다음 반복으로 넘어가도록 함
+        // 핵심은 continue가 선언된 위치 아래쪽 코드를 실행하지 않는 것!!
+        for (int i=0; i<10; i++) {
+            if (i == 5) {
+                continue;
+            }
+            System.out.print(i + " "); // 0 1 2 3 4 6 7 8 9
+        }
+        System.out.println();
     }
 }
