@@ -7,6 +7,7 @@ public class Product {
     double price; // 가격 (계산 편의성 때문에 double을 사용)
     int stock; // 재고 수량
 
+
     // 생성자
     public Product() {
     }

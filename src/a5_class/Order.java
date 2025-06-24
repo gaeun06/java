@@ -5,8 +5,8 @@ import java.util.Date;
 public class Order {
     // 필드
     long orderId; // 숫자형 아이디 가능(이 경우 long이 주로 사용됨)
-    String userEmail; // 유저 이메일
-    String productID; // 제품 아이디
+    User user; // 유저 이메일
+    Product product; // 제품 아이디
     Date orderDate; // 주문 날짜
     double totalAmount; // 주문 수량
 
@@ -15,10 +15,10 @@ public class Order {
     public Order() {
     }
 
-    public Order(long orderId, String userEmail, String productID, Date orderDate, double totalAmount) {
+    public Order(long orderId, User user, Product product, Date orderDate, double totalAmount) {
         this.orderId = orderId;
-        this.userEmail = userEmail;
-        this.productID = productID;
+        this.user = user;
+        this.product = product;
         this.orderDate = orderDate;
         this.totalAmount = totalAmount;
     }
