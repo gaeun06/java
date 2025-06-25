@@ -81,5 +81,7 @@ public class MyClass {
         // System.out.println(a); // 에러. 스택 변수는 초기화 해야만 읽을 수 있음
         a = 10;
         System.out.println(a); // 10
+
+
     }
 }
