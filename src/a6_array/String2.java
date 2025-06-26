@@ -64,7 +64,7 @@ public class String2 {
         System.out.println(Arrays.toString(array4)); // [안, 녕, 하, 세, 요]
         // String은 불변성을 가지기 때문에 수정할 수 없다.
         // String을 char[]로 변경하여 수정하거나 검색하는 데에 용이하도록 사용한다.
-        
+
     }
 }
 
