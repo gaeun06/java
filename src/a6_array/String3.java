@@ -60,5 +60,23 @@ public class String3 {
         // 이때 if~else로 코드를 구현하면 지나치게 복잡하므로
         // 간단하게 정규표현식을 이용하자!!!!
         // 정규표현식은 https://regexr.com/에서 생성 가능 (또는 GPT 이용)
+
+        // trim 공백 제거 (단어의 앞뒤에 있는 공백만 제거)
+        String msg = "   a b c   "; //  단어 안에 있는 공백은 해당 X
+        System.out.println(msg.trim()); // abc
+
+        // 6. 문자열의 내용 비교 <중요>
+        String str2 = new String("Java");
+        String str3 = new String("Java");
+        // new 를 만들었기 때문에 새로운 위치에 생성된다.
+        String str4 = new String("java");
+        System.out.println(str2 == str3); // false
+        System.out.println(str3 == str4); // false
+        System.out.println(str2.equals(str3)); // true
+        System.out.println(str3.equals(str4)); // false
+        System.out.println(str3.equalsIgnoreCase(str4)); // true
+        // == : 객체의 주소를 비교 (스택값)
+        // equals : 대소문자 구분 비교 O
+        // equalsIgnoreCase : 대소문자 구분 비교 X
     }
 }
