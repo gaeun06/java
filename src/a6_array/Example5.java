@@ -17,9 +17,9 @@ public class Example5 {
     public static String checkMember(String[] members, String str) {
         for (String data : members) {
             if (data.equalsIgnoreCase(str)) {
-                System.out.println(members + "님 환영합니다.");
+                return data + "님 환영합니다." ;
             }
         }
-        return str;
+        return "회원가입을 해주세요.";
     }
 }
