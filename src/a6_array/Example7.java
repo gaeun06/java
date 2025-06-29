@@ -11,7 +11,7 @@ public class Example7 {
         }; // 2차원 정방 행렬 [4][5]
         calculate2DArray(arr); // total=325 , average=16.25
     }
-    
+
     public static void calculate2DArray(int[][] arr) {
         int total = 0;
         double average = 0;
