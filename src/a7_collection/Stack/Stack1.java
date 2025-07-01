@@ -24,9 +24,11 @@ public class Stack1 {
         // #2. peek : 읽기
         System.out.println("ㅡㅡㅡㅡ #2 ㅡㅡㅡㅡ");
         System.out.println(stack.peek()); // 7
+        // ㄴ> 마지막에 들어간 값이 가장 먼저 출력된다.
         System.out.println();
 
-        // #3. search : 탐색 및 확인(대기번호확인)
+        // #3. search : 탐색 및 확인 (대기 번호 확인)
+        // -> 몇 번째에 호출 될 지 확인한다.
         System.out.println("ㅡㅡㅡㅡ #3 ㅡㅡㅡㅡ");
         System.out.println(stack.search(7)); // 1
         System.out.println(stack.search(3)); // 2
@@ -36,6 +38,7 @@ public class Stack1 {
         System.out.println();
 
         // #4. pop : 꺼내고 삭제
+        // -> 큐의 poll 과 비슷한 개념이다.
         System.out.println("ㅡㅡㅡㅡ #4 ㅡㅡㅡㅡ");
         System.out.println(stack.pop()); // 7
         System.out.println(stack.pop()); // 3
